@@ -1,18 +1,27 @@
 function solution(board, moves) {
-  let basket = [];
-  while (moves.length > 0) {
-    let line = moves[0] - 1;
-    let picked = board[line][board.length - 1];
-    basket.push(picked);
-    board[line].pop();
-    moves.shift();
-    for (let i = 0; i < basket.length - 2; i++) {
-      if (basket[i] === basket[i + 1]) {
-        basket.splice(i, 2);
+  const basket = [];
+  let result = 0;
+  moves.forEach((order) => {
+    const doll = pickup(board, order - 1);
+    if (doll) {
+      if (basket[basket.length - 1] === doll) {
+        basket.pop();
+        result += 2;
+      } else {
+        basket.push(doll);
       }
     }
-  }
-  return basket.length;
+  });
+  return result;
 }
 
-// 테스트 10 중 1개만 통과.
+function pickup(board, order) {
+  const newBoard = board;
+  for (let i = 0; i < newBoard.length; i++) {
+    if (newBoard[i][order] !== 0) {
+      const doll = newBoard[i][order];
+      newBoard[i][order] = 0;
+      return doll;
+    }
+  }
+}
