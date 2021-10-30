@@ -5,9 +5,7 @@ function isCharacterALetter(char) {
     // only the lower case
     return (/[a-z]/).test(char)
     // both
-    function isCharacterALetter(char) {
-        return (/[a-zA-Z]/).test(char)
-    }
+    return (/[a-zA-Z]/).test(char)
 }
 
 // ECMAScript Case Transformation
