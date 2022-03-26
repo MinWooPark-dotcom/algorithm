@@ -1,0 +1,64 @@
+title: Park MinWoo's Tech Blog 
+homepage: Park MinWoo's Tech Blog
+author:
+  name: 
+  email: positive1attraction@gmail.com
+description: > # this means to ignore newlines until "show_excerpts:"
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    # twitter: jekyllrb
+    github:  GitHub
+    github_link: https://github.com/MinWooPark-dotcom
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: Facebook
+    # facebook_link: https://www.facebook.com/chektsolutions/
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: Linkedin
+    linkedin_link: https://www.linkedin.com/in/minwoo-park-759298212/
+    # pinterest: jekyll
+    # youtube: YouTube
+    # youtube_link: https://www.youtube.com/c/VisualAlarmMonitoring
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+    notion: Notion
+    notion_link: https://www.notion.so/a12c05eb58da4b2da1c557173c20d301
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: minima
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
