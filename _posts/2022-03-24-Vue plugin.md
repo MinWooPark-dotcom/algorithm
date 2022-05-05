@@ -1,7 +1,9 @@
 ---
-layout: post
 title: "Vue plugin"
-categories: Vue.js
+# author: Chas
+daata: 2022-03-24
+category: Vue.js
+layout: post
 ---
 
 vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다.
@@ -57,7 +59,7 @@ new Vue({
 
 ---
 
-# 3. 어디서 쓰이는가?
+## 3. 어디서 쓰이는가?
 
 /apis, /plugins, /store등 화면 단을 구성하는 .vue 파일 외 대부분 .js파일에서 app을 인자로 받아 사용합니다.
 
@@ -65,7 +67,7 @@ new Vue({
 
 ---
 
-# 4. app은 왜 쓰이는가?
+## 4. app은 왜 쓰이는가?
 
 이번에는 **플러그인**에 중점을 두고 설명하겠습니다.
 

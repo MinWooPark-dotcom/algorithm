@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-26T17:27:58+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Park MinWoo’s Tech Blog</title><subtitle></subtitle><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;&quot;positive1attraction@gmail.com&quot;}</name><email>positive1attraction@gmail.com</email></author><entry><title type="html">Vue plugin</title><link href="http://localhost:4000/vue.js/2022/03/24/Vue-plugin.html" rel="alternate" type="text/html" title="Vue plugin" /><published>2022-03-24T00:00:00+09:00</published><updated>2022-03-24T00:00:00+09:00</updated><id>http://localhost:4000/vue.js/2022/03/24/Vue%20plugin</id><content type="html" xml:base="http://localhost:4000/vue.js/2022/03/24/Vue-plugin.html"><![CDATA[<p>vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-05-05T17:16:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Park MinWoo’s Tech Blog</title><subtitle>Build Jekyll site with the GitBook style.
+</subtitle><author><name>Park MinWoo</name></author><entry><title type="html">Vue plugin</title><link href="http://localhost:4000/vue.js/2022-03-24-Vue-plugin.html" rel="alternate" type="text/html" title="Vue plugin" /><published>2022-03-24T00:00:00+09:00</published><updated>2022-03-24T00:00:00+09:00</updated><id>http://localhost:4000/vue.js/Vue%20plugin</id><content type="html" xml:base="http://localhost:4000/vue.js/2022-03-24-Vue-plugin.html"><![CDATA[<p>vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다.
 작업을 하면서 이곳 저곳에서 app을 인자로 받으며 <code class="language-plaintext highlighter-rouge">app.config.globalPropertie</code> 에 접근하는 경우가 많았습니다.</p>
 
 <p>plugins에 대해 이야기 하려면 app에 대해 얘기를 해야 합니다.</p>
@@ -52,7 +53,7 @@
 
 <hr />
 
-<h1 id="3-어디서-쓰이는가">3. 어디서 쓰이는가?</h1>
+<h2 id="3-어디서-쓰이는가">3. 어디서 쓰이는가?</h2>
 
 <p>/apis, /plugins, /store등 화면 단을 구성하는 .vue 파일 외 대부분 .js파일에서 app을 인자로 받아 사용합니다.</p>
 
@@ -60,7 +61,7 @@
 
 <hr />
 
-<h1 id="4-app은-왜-쓰이는가">4. app은 왜 쓰이는가?</h1>
+<h2 id="4-app은-왜-쓰이는가">4. app은 왜 쓰이는가?</h2>
 
 <p>이번에는 <strong>플러그인</strong>에 중점을 두고 설명하겠습니다.</p>
 
@@ -123,4 +124,4 @@ window)).</p>
 <h2 id="마무리">마무리</h2>
 
 <p>vue의 프로젝트 구조에서 /plugins/tool.js가 어떻게 만들어졌으며, 어떠한 이유로 사용할 수 있는지, 그리고 tool에 메서드를 직접 만들어 가져다 쓸 수 있는 방법을 떠올릴 수 있기를 바라며 위와 같은 주제로 얘기를 나눴습니다.
-감사합니다.</p>]]></content><author><name>{&quot;name&quot;=&gt;nil, &quot;email&quot;=&gt;&quot;positive1attraction@gmail.com&quot;}</name><email>positive1attraction@gmail.com</email></author><category term="Vue.js" /><summary type="html"><![CDATA[vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다. 작업을 하면서 이곳 저곳에서 app을 인자로 받으며 app.config.globalPropertie 에 접근하는 경우가 많았습니다.]]></summary></entry></feed>
+감사합니다.</p>]]></content><author><name>Park MinWoo</name></author><category term="Vue.js" /><summary type="html"><![CDATA[vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다. 작업을 하면서 이곳 저곳에서 app을 인자로 받으며 app.config.globalPropertie 에 접근하는 경우가 많았습니다.]]></summary></entry></feed>

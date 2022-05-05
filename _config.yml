@@ -1,64 +1,54 @@
-title: Park MinWoo's Tech Blog 
-homepage: Park MinWoo's Tech Blog
-author:
-  name: 
-  email: positive1attraction@gmail.com
-description: > # this means to ignore newlines until "show_excerpts:"
+# Configurations
+title:            Park MinWoo's Tech Blog
+longtitle:        Park MinWoo's Tech Blog
+author:           Park MinWoo
+email:            positive1attraction@gmail.com
+description: >
+  Build Jekyll site with the GitBook style.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+version:          1.0
+gitbook_version:  3.2.3
 
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-  date_format: "%b %-d, %Y"
+url:              'https://sighingnow.github.io'
+baseurl:          ''
+rss:              RSS
 
-  # generate social links in footer
-  social_links:
-    # twitter: jekyllrb
-    github:  GitHub
-    github_link: https://github.com/MinWooPark-dotcom
-    # devto: jekyll
-    # dribbble: jekyll
-    # facebook: Facebook
-    # facebook_link: https://www.facebook.com/chektsolutions/
-    # flickr:   jekyll
-    # instagram: jekyll
-    linkedin: Linkedin
-    linkedin_link: https://www.linkedin.com/in/minwoo-park-759298212/
-    # pinterest: jekyll
-    # youtube: YouTube
-    # youtube_link: https://www.youtube.com/c/VisualAlarmMonitoring
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
-    notion: Notion
-    notion_link: https://www.notion.so/a12c05eb58da4b2da1c557173c20d301
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
 
-    # GitLab instances
-    # gitlab:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+syntax_highlighter_style: colorful
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+markdown_ext:     markdown,mkdown,mkdn,mkd,md
 
-# Build settings
-theme: minima
+# Permalinks
+permalink:        /:categories/:year-:month-:day-:title:output_ext
+
+exclude:
+  - _drafts
+
+collections:
+  pages:
+    output: true
+    permalink: /:collection/:path/
+
+destination:      ./_site
+incremental:      false
+regenerate:       true
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
