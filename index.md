@@ -50,10 +50,9 @@ layout: home
 
 ***
 
-- 👨‍💻 작업들은 [GitHub](https://github.com/MinWooPark-dotcom) 에서 보실 수 있어요.
+- 👨‍💻 저의 작업들은 [GitHub](https://github.com/MinWooPark-dotcom) 에서 보실 수 있어요.
 
-- 📫  <a href="mailto:positive1attraction@gmail.com">positive1attraction@gmail.com</a>
+- 📫  저에게는 <a href="mailto:positive1attraction@gmail.com">positive1attraction@gmail.com</a>
 을 통해 연락하실 수 있어요.
 
-- 📄 경험이 더 궁금하시면 [Minwoo's Notion](https://bit.ly/3lXNAIq) 에서 확인하실 수 있어요.
-
+- 📄 제 경험이 더 궁금하시면 [Minwoo's Notion](https://bit.ly/3lXNAIq) 에서 확인하실 수 있어요.

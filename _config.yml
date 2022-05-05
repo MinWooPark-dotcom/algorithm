@@ -41,7 +41,11 @@ exclude:
   - _drafts
 
 collections:
-  pages:
+  TIL:
+    output: true
+    permalink: /:collection/:path/
+  
+  Retrospect:
     output: true
     permalink: /:collection/:path/
 

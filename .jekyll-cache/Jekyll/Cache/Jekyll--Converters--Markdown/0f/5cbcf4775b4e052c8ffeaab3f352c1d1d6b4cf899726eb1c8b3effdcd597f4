@@ -1,3 +1,0 @@
-I"F<p>vue 프로젝트 구조에 대해, 그 중에서도 plugin 사용에 대한 주제로 얘기를 나눠보려고 합니다.
-작업을 하면서 이곳 저곳에서 app을 인자로 받으며 <code class="language-plaintext highlighter-rouge">app.config.globalPropertie</code> 에 접근하는 경우가 많았습니다.</p>
-:ET

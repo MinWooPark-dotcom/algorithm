@@ -20,17 +20,21 @@
             <li class="divider"></li>
 
             {% for collection in site.collections %}
-                <!-- <p>{{ collection.label }}</p> -->
+                {% if collection.label != "posts" %}
+                    <p style="margin-left: 15px">{{ collection.label }}</p>
+                {% endif %}
+
                 {% if collection.output %}
                     {% assign reversed_posts = site[collection.label] | reverse %}
-
+                    
+                    <!-- _posts -->
                     {% for post in reversed_posts %}
                         {% if page.url == post.url %}
                         <li class="chapter active" data-level="1.2" data-path="{{site.baseurl}}{{post.url}}">
                         {% else %}
                         <li class="chapter" data-level="1.1" data-path="{{site.baseurl}}{{post.url}}">
                         {% endif %}
-                            <a href="{{site.baseurl}}{{post.url}}">
+                            <a href="{{site.baseurl}}{{post.url}}" style="margin-left: 15px">
                                 {{ post.title | escape }}
                             </a>
                             {% if site.toc.enabled %}
@@ -40,16 +44,13 @@
                             {% endif %}
                         </li>
                     {% endfor %}
-
-                    <li class="divider"></li>
+                    
+                     {% if collection.label != "posts" %}       
+                        <li class="divider"></li>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
 
-            <li>
-                <a href="https://github.com/sighingnow/jekyll-gitbook/fork" target="blank" class="gitbook-link">
-                    Fork it Now!
-                </a>
-            </li>
         </ul>
     </nav>
 </div>
