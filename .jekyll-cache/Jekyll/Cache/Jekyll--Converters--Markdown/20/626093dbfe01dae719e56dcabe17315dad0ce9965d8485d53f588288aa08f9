@@ -1,11 +1,8 @@
----
-layout: home
----
-
+I"@
 <h1 style="text-align:center">Hello 👋, I'm Park Minwoo </h1>
-***
+<hr />
 <div style="display: flex;">
-  <img src="./img/220504_12_04_dl.jpg" style="width: 230px; height: 230px; border: 1px solid lightgrey; border-radius: 50% !important;">
+  <img src="./img/220504_12_04_dl.jpg" style="width: 230px; height: 230px; border: 1px solid lightgrey; border-radius: 50% !important;" />
   
   <div style="width: calc(100% - 230px - 30px); margin-left: 30px;">
     <div style="font-size: 20px; font-weight: bold">
@@ -48,12 +45,19 @@ layout: home
   </div>
 </div>
 
-***
+<hr />
 
-- 👨‍💻 작업들은 [GitHub](https://github.com/MinWooPark-dotcom) 에서 보실 수 있어요.
+<ul>
+  <li>
+    <p>👨‍💻 작업들은 <a href="https://github.com/MinWooPark-dotcom">GitHub</a> 에서 보실 수 있어요.</p>
+  </li>
+  <li>
+    <p>📫  <a href="mailto:positive1attraction@gmail.com">positive1attraction@gmail.com</a>
+을 통해 연락하실 수 있어요.</p>
+  </li>
+  <li>
+    <p>📄 경험이 더 궁금하시면 <a href="https://bit.ly/3lXNAIq">Minwoo’s Notion</a> 에서 확인하실 수 있어요.</p>
+  </li>
+</ul>
 
-- 📫  <a href="mailto:positive1attraction@gmail.com">positive1attraction@gmail.com</a>
-을 통해 연락하실 수 있어요.
-
-- 📄 경험이 더 궁금하시면 [Minwoo's Notion](https://bit.ly/3lXNAIq) 에서 확인하실 수 있어요.
-
+:ET
