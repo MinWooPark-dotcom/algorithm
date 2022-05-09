@@ -1,0 +1,83 @@
+I"�<h1 id="today-i-learned">Today I Learned</h1>
+<p>Algorithm Problem with JavaScript</p>
+
+<hr />
+
+<h3 id="문제-설명-"><strong>문제 설명 📖</strong></h3>
+
+<p>이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
+별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.</p>
+
+<p><strong>제한사항</strong></p>
+
+<ul>
+  <li>n과 m은 각각 1000 이하인 자연수입니다.</li>
+</ul>
+
+<p><strong>입출력 예</strong></p>
+
+<p>입력
+<img src="https://velog.velcdn.com/images/qmasem/post/76c29903-085c-4fa5-8615-a36947a72ad3/image.png" alt="" /></p>
+
+<p>출력
+<img src="https://velog.velcdn.com/images/qmasem/post/28e7ee54-08ac-45db-b13a-4482e0dc5add/image.png" alt="" /></p>
+
+<hr />
+
+<h3 id="문제-이해-"><strong>문제 이해 🔑</strong></h3>
+
+<p>반복문을 사용하여 행렬을 만드는 문제로 이해했습니다.
+행렬을 2차원 배열로 표현할 수 있기 때문에 이중 for문으로 해결할 수 있다고 생각했습니다.</p>
+
+<hr />
+
+<h3 id="수도-코드-️"><strong>수도 코드 ✍️</strong></h3>
+
+<ol>
+  <li>각 행의 값을 담을 변수를 선언한다.</li>
+  <li>반복문을 통해 행만큼 반복한다.</li>
+  <li>2차원 반복문을 만들어 각 행에서 열만큼 반복하여 별(*) 문자를 만든다.</li>
+  <li>2차원 반복문이 끝나면 각 행의 값을 출력한다.</li>
+  <li>1차원 반복문에서 다음 행으로 넘어오면 이전 행의 값을 담았던 변수를 빈 문자열로 초기화하고 행이 끝날 때 까지 2 ~ 4 과정을 반복하고 종료한다.</li>
+</ol>
+
+<hr />
+
+<h3 id="-내가-작성한-코드-작성-️">** 내가 작성한 코드 작성 ⌨️**</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">setEncoding</span><span class="p">(</span><span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2"> </span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nx">b</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="dl">""</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="dl">""</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-다른-사람이-작성한-코드-작성-️">** 다른 사람이 작성한 코드 작성 ⌨️**</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">setEncoding</span><span class="p">(</span><span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2"> </span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nx">b</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(((</span><span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">).</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="o">+</span><span class="s2">`\n`</span><span class="p">).</span><span class="nx">repeat</span><span class="p">(</span><span class="nx">b</span><span class="p">))</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="정리-">정리 😄</h3>
+
+<p>행렬을 만드는 문제이기에 2차원 배열을 만들기 위해 이중 for문을 생각했습니다.
+그러나 다른 사람이 작성한 코드를 보면서 해당 문제는 행렬의 각 요소에 특정 값을 입력하지 않고 별(*) 문자만을 입력하는 문제이기 때문에 이중 for문을 사용하여 시간 복잡도를 O(n²)으로 만들 필요가 없다는 것을 깨달았습니다.
+이번 문제 풀이를 보고 인자로 반복할 값을 넣어주면 문자열을 반복한 값을 리턴해 주는 repeat 메서드를 알게 되었습니다.
+해당 메서드로 체이닝을 하면 더욱 직관적이고 간결한 코드를 작성할 수 있으며 시간 복잡도 또한 O(n)으로 줄일 수 있음을 알게 되었습니다.</p>
+:ET

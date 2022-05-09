@@ -41,6 +41,10 @@ exclude:
   - _drafts
 
 collections:
+  Algorithm:
+    output: true
+    permalink: /:collection/:path/  
+
   TIL:
     output: true
     permalink: /:collection/:path/

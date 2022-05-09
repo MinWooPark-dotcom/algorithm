@@ -1,0 +1,75 @@
+I"a<h1 id="today-i-learned">Today I Learned</h1>
+<p>Algorithm Problem with JavaScript</p>
+
+<hr />
+
+<h3 id="문제-설명-"><strong>문제 설명 📖</strong></h3>
+
+<p>이 문제에는 표준 입력으로 두 개의 정수 n과 m이 주어집니다.
+별(*) 문자를 이용해 가로의 길이가 n, 세로의 길이가 m인 직사각형 형태를 출력해보세요.</p>
+
+<p><strong>제한사항</strong></p>
+
+<ul>
+  <li>n과 m은 각각 1000 이하인 자연수입니다.</li>
+</ul>
+
+<p><strong>입출력 예</strong></p>
+
+<p>입력
+<img src="https://velog.velcdn.com/images/qmasem/post/76c29903-085c-4fa5-8615-a36947a72ad3/image.png" alt="" /></p>
+
+<p>출력
+<img src="https://velog.velcdn.com/images/qmasem/post/28e7ee54-08ac-45db-b13a-4482e0dc5add/image.png" alt="" /></p>
+
+<hr />
+
+<h3 id="문제-이해-"><strong>문제 이해 🔑</strong></h3>
+
+<p>반복문을 사용하여 행렬을 만드는 문제로 이해했습니다.
+각 행의 열에 특정 값을 입력해야 한다면 2차원 배열을 사용하겠지만 해당 문제는 행렬을 형태만을 만드는 것이기 떄문에 1차원 반복문으로 해결할 수 있다는 생각을 했습니다.</p>
+
+<hr />
+
+<h3 id="수도-코드-️"><strong>수도 코드 ✍️</strong></h3>
+
+<ol>
+  <li>구입한 로또 배열와 당첨 번호 배열을 이중 for문으로 순회합니다.</li>
+  <li>반복문을 순회하면서 로또 배열의 원소가 0인 경우 0의 갯수 카운트를 셉니다.</li>
+  <li>로또 번호와 당첨 번호가 같은 경우 당첨 갯수 카운트를 셉니다.</li>
+  <li>최저 순위는 카운트한 당첨 갯수를 순위를 변환하여 구합니다.</li>
+  <li>최고 순위는 카운트한 당첨 갯수에 0의 갯수를 더한 값으로 순위를 변환하여 구합니다.</li>
+</ol>
+
+<hr />
+
+<h3 id="-내가-작성한-코드-작성-️">** 내가 작성한 코드 작성 ⌨️**</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">setEncoding</span><span class="p">(</span><span class="dl">'</span><span class="s1">utf8</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">process</span><span class="p">.</span><span class="nx">stdin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2"> </span><span class="dl">"</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nx">b</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+    <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="dl">""</span>
+    <span class="c1">// 1. 반복문을 통해 b만큼의 행을 만든다.</span>
+    <span class="c1">// 2. 이중 반복문을 통해 a만큼 열을 만든다.</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">result</span> <span class="o">=</span> <span class="dl">""</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">a</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span>
+        <span class="p">}</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-다른-사람이-작성한-코드-작성-️">** 다른 사람이 작성한 코드 작성 ⌨️**</h3>
+
+<hr />
+
+<h3 id="정리-">정리 😄</h3>
+
+<p>이중 for문은 한 눈에 이해하기는 쉬우나 코드 길이가 길어지고 시간 복잡도가 O(n²) 소요되는 단점이 있었습니다.
+두 배열을 비교할 때 더 간결하고 시간 복잡도가 덜 소요되는 풀이에 대해 더 고민해 보는 시간을 갖도록 해야겠습니다.</p>
+:ET
