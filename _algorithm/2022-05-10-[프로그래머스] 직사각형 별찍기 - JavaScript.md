@@ -5,8 +5,7 @@ daata: 2022-05-10
 category: algorithm
 layout: post
 ---
-# Today I Learned
-Algorithm Problem with JavaScript
+[프로그래머스] 직사각형 별찍기 - Algorithm Problem with JavaScript
 
 ***
 
