@@ -1,6 +1,5 @@
 import datetime
 
-
 def solution(a, b):
     date = datetime.date(2016, a, b)
     day = date.weekday()
