@@ -9,12 +9,16 @@ README_FILE = 'README.md'
 PROBLEM_EXTENSIONS = ('.py', '.cpp', '.js', '.java')
 RESULT_EXTENSION = '.md'
 
+EXT_TO_LANG = {
+    '.py': 'Python',
+    '.js': 'JavaScript',
+}
+
 def extract_submission_date(readme_path):
     try:
         with open(readme_path, encoding='utf-8') as f:
             content = f.read()
 
-        # 줄바꿈 포함한 유연한 매칭
         match = re.search(r'### 제출 일자\s*\n\s*(\d{4}년 \d{1,2}월 \d{1,2}일 \d{1,2}:\d{2}:\d{2})', content)
         if match:
             date_str = match.group(1).replace('년 ', '-').replace('월 ', '-').replace('일', '').strip()
@@ -49,7 +53,10 @@ def extract_info(folder, problem_dir, file_dict):
         readme_path = os.path.join(problem_dir, file_dict['result'][0])
         submission_dt = extract_submission_date(readme_path)
 
-    return level, number.strip(), title, submission_dt
+    ext = os.path.splitext(file_dict['problem'][0])[1] if 'problem' in file_dict else ''
+    language = EXT_TO_LANG.get(ext, 'Unknown')
+
+    return level, number.strip(), title, submission_dt, language
 
 def generate_readme():
     lines = ['# 📘 알고리즘 문제 풀이\n']
@@ -83,36 +90,34 @@ def generate_readme():
         ))
 
         lines.append(f"## 📂 {folder}\n")
-        lines.append('| 레벨 | 번호 | 문제 | 결과 |')
-        lines.append('|------|------|--------|--------|')
+        lines.append('| 레벨 | 번호 | 문제 | 언어 | 결과 |')
+        lines.append('|------|------|--------|--------|--------|')
 
         for problem_dir, file_dict in sorted_problems:
-            level, number, title, submission_dt = extract_info(folder, problem_dir, file_dict)
+            level, number, title, submission_dt, language = extract_info(folder, problem_dir, file_dict)
 
             problem_link = f"[{title}]({file_dict['problem'][1]})" if 'problem' in file_dict else ''
             result_link = f"[README]({file_dict['result'][1]})" if 'result' in file_dict else ''
 
-            lines.append(f'| {level} | {number} | {problem_link} | {result_link} |')
+            lines.append(f'| {level} | {number} | {problem_link} | {language} | {result_link} |')
 
             # 최근 풀이 목록 저장
             if submission_dt:
-                recent_list.append((submission_dt, folder, level, number, title, file_dict['problem'][1]))
+                recent_list.append((submission_dt, folder, level, number, title, language, file_dict['problem'][1]))
 
         lines.append('')  # 줄바꿈
 
     # 최근 풀이 Top 5
-        # 최근 풀이 Top 5
     lines.insert(1, '## 🕘 최근 풀이한 문제 Top 5\n')
-    lines.insert(2, '| 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 결과 |')
-    lines.insert(3, '|--------|----------|--------|--------|--------|--------|')
+    lines.insert(2, '| 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |')
+    lines.insert(3, '|--------|----------|--------|--------|--------|--------|--------|')
 
     for item in sorted(recent_list, reverse=True)[:5]:
-        dt, folder, level, number, title, problem_path = item
+        dt, folder, level, number, title, language, problem_path = item
         date_str = dt.strftime('%Y-%m-%d %H:%M:%S')
 
         # 결과 파일 경로 찾기
         result_path = ''
-        # 문제 경로: 프로그래머스/0/120802. 두 수의 합 구하기/두 수의 합 구하기.py
         problem_dir = os.path.dirname(problem_path)
         readme_path = os.path.join(problem_dir, 'README.md')
         if os.path.exists(readme_path):
@@ -121,11 +126,10 @@ def generate_readme():
         problem_link = f"[{title}]({problem_path})"
         result_link = f"[README]({result_path})" if result_path else ''
 
-        lines.insert(4, f'| {date_str} | {folder} | {level} | {number} | {problem_link} | {result_link} |')
+        lines.insert(4, f'| {date_str} | {folder} | {level} | {number} | {problem_link} | {language} | {result_link} |')
 
     with open(README_FILE, 'w') as f:
         f.write('\n'.join(lines))
-
 
 if __name__ == "__main__":
     generate_readme()
