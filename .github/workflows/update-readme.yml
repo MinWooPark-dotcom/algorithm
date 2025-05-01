@@ -3,13 +3,13 @@ name: 🔄 Auto Update README
 on:
   push:
     paths:
-      - 'programmers/**'
-      - 'baekjoon/**'
+      - '백준/**'
+      - '프로그래머스/**'
     branches:
       - main
 
 jobs:
-  build:
+  update-readme:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,10 +24,12 @@ jobs:
       - name: Run update_readme.py
         run: python update_readme.py
 
-      - name: Commit updated README
+      - name: Commit and push if README.md changed
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
           git add README.md
-          git diff --cached --quiet || git commit -m "🤖 auto: update README"
-          git push
+          git diff --cached --quiet || (
+            git commit -m "🤖 auto: update README.md with latest problems"
+            git push
+          )
