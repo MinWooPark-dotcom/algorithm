@@ -1,6 +1,8 @@
+# OS
 .DS_Store
 
-# local에서 알고리즘 테스트용
-test.py
+# local test
+/test
 
+# template
 /notes/.template.md
