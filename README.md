@@ -4,16 +4,17 @@
 
 | 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |--------|----------|--------|--------|--------|--------|--------|
-| 2025-10-21 16:24:11 | 프로그래머스 | 0 | 120829 | [각도기](프로그래머스/0/120829. 각도기/각도기.js) | JavaScript | [README](프로그래머스/0/120829. 각도기/README.md) |
 | 2025-10-21 22:18:04 | 백준 | Silver | 10816 | [숫자 카드 2](백준/Silver/10816. 숫자 카드 2/숫자 카드 2.js) | JavaScript | [README](백준/Silver/10816. 숫자 카드 2/README.md) |
 | 2025-10-22 00:01:09 | 백준 | Silver | 2805 | [나무 자르기](백준/Silver/2805. 나무 자르기/나무 자르기.js) | JavaScript | [README](백준/Silver/2805. 나무 자르기/README.md) |
 | 2025-10-22 16:38:33 | 백준 | Silver | 10828 | [스택](백준/Silver/10828. 스택/스택.js) | JavaScript | [README](백준/Silver/10828. 스택/README.md) |
 | 2025-10-22 17:10:46 | 백준 | Silver | 18258 | [큐 2](백준/Silver/18258. 큐 2/큐 2.js) | JavaScript | [README](백준/Silver/18258. 큐 2/README.md) |
+| 2025-10-22 18:05:11 | 백준 | Bronze | 3052 | [나머지](백준/Bronze/3052. 나머지/나머지.js) | JavaScript | [README](백준/Bronze/3052. 나머지/README.md) |
 ## 📂 백준
 
 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |------|------|--------|--------|--------|
 | Bronze | 2557 | [Hello world](백준/Bronze/2557. Hello World/Hello World.py) | Python | [README](백준/Bronze/2557. Hello World/README.md) |
+| Bronze | 3052 | [나머지](백준/Bronze/3052. 나머지/나머지.js) | JavaScript | [README](백준/Bronze/3052. 나머지/README.md) |
 | Silver | 1920 | [수 찾기](백준/Silver/1920. 수 찾기/수 찾기.js) | JavaScript | [README](백준/Silver/1920. 수 찾기/README.md) |
 | Silver | 2805 | [나무 자르기](백준/Silver/2805. 나무 자르기/나무 자르기.js) | JavaScript | [README](백준/Silver/2805. 나무 자르기/README.md) |
 | Silver | 10816 | [숫자 카드 2](백준/Silver/10816. 숫자 카드 2/숫자 카드 2.js) | JavaScript | [README](백준/Silver/10816. 숫자 카드 2/README.md) |
