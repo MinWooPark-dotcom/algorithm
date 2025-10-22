@@ -4,11 +4,11 @@
 
 | 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |--------|----------|--------|--------|--------|--------|--------|
-| 2025-05-01 14:19:57 | 프로그래머스 | 2 | 42885 | [구명보트](프로그래머스/2/42885. 구명보트/구명보트.js) | JavaScript | [README](프로그래머스/2/42885. 구명보트/README.md) |
 | 2025-10-21 16:10:57 | 백준 | Silver | 1920 | [수 찾기](백준/Silver/1920. 수 찾기/수 찾기.js) | JavaScript | [README](백준/Silver/1920. 수 찾기/README.md) |
 | 2025-10-21 16:24:11 | 프로그래머스 | 0 | 120829 | [각도기](프로그래머스/0/120829. 각도기/각도기.js) | JavaScript | [README](프로그래머스/0/120829. 각도기/README.md) |
 | 2025-10-21 22:18:04 | 백준 | Silver | 10816 | [숫자 카드 2](백준/Silver/10816. 숫자 카드 2/숫자 카드 2.js) | JavaScript | [README](백준/Silver/10816. 숫자 카드 2/README.md) |
 | 2025-10-22 00:01:09 | 백준 | Silver | 2805 | [나무 자르기](백준/Silver/2805. 나무 자르기/나무 자르기.js) | JavaScript | [README](백준/Silver/2805. 나무 자르기/README.md) |
+| 2025-10-22 16:38:33 | 백준 | Silver | 10828 | [스택](백준/Silver/10828. 스택/스택.js) | JavaScript | [README](백준/Silver/10828. 스택/README.md) |
 ## 📂 백준
 
 | 레벨 | 번호 | 문제 | 언어 | 결과 |
@@ -17,6 +17,7 @@
 | Silver | 1920 | [수 찾기](백준/Silver/1920. 수 찾기/수 찾기.js) | JavaScript | [README](백준/Silver/1920. 수 찾기/README.md) |
 | Silver | 2805 | [나무 자르기](백준/Silver/2805. 나무 자르기/나무 자르기.js) | JavaScript | [README](백준/Silver/2805. 나무 자르기/README.md) |
 | Silver | 10816 | [숫자 카드 2](백준/Silver/10816. 숫자 카드 2/숫자 카드 2.js) | JavaScript | [README](백준/Silver/10816. 숫자 카드 2/README.md) |
+| Silver | 10828 | [스택](백준/Silver/10828. 스택/스택.js) | JavaScript | [README](백준/Silver/10828. 스택/README.md) |
 
 ## 📂 프로그래머스
 
