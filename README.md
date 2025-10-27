@@ -4,11 +4,11 @@
 
 | 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |--------|----------|--------|--------|--------|--------|--------|
-| 2025-10-26 12:16:46 | 프로그래머스 | 1 | 42748 | [K번째수](프로그래머스/1/42748. K번째수/K번째수.js) | JavaScript | [README](프로그래머스/1/42748. K번째수/README.md) |
 | 2025-10-26 12:33:06 | 프로그래머스 | 1 | 81301 | [숫자 문자열과 영단어](프로그래머스/1/81301. 숫자 문자열과 영단어/숫자 문자열과 영단어.js) | JavaScript | [README](프로그래머스/1/81301. 숫자 문자열과 영단어/README.md) |
 | 2025-10-26 12:51:05 | 프로그래머스 | 1 | 12906 | [같은 숫자는 싫어](프로그래머스/1/12906. 같은 숫자는 싫어/같은 숫자는 싫어.js) | JavaScript | [README](프로그래머스/1/12906. 같은 숫자는 싫어/README.md) |
 | 2025-10-26 16:04:09 | 백준 | Bronze | 10818 | [최소， 최대](백준/Bronze/10818. 최소， 최대/최소， 최대.js) | JavaScript | [README](백준/Bronze/10818. 최소， 최대/README.md) |
 | 2025-10-27 09:04:52 | 백준 | Bronze | 1546 | [평균](백준/Bronze/1546. 평균/평균.js) | JavaScript | [README](백준/Bronze/1546. 평균/README.md) |
+| 2025-10-27 15:45:43 | 백준 | Silver | 1181 | [단어 정렬](백준/Silver/1181. 단어 정렬/단어 정렬.js) | JavaScript | [README](백준/Silver/1181. 단어 정렬/README.md) |
 ## 📂 백준
 
 | 레벨 | 번호 | 문제 | 언어 | 결과 |
@@ -18,6 +18,7 @@
 | Bronze | 3052 | [나머지](백준/Bronze/3052. 나머지/나머지.js) | JavaScript | [README](백준/Bronze/3052. 나머지/README.md) |
 | Bronze | 10818 | [최소， 최대](백준/Bronze/10818. 최소， 최대/최소， 최대.js) | JavaScript | [README](백준/Bronze/10818. 최소， 최대/README.md) |
 | Silver | 1003 | [피보나치 함수](백준/Silver/1003. 피보나치 함수/피보나치 함수.js) | JavaScript | [README](백준/Silver/1003. 피보나치 함수/README.md) |
+| Silver | 1181 | [단어 정렬](백준/Silver/1181. 단어 정렬/단어 정렬.js) | JavaScript | [README](백준/Silver/1181. 단어 정렬/README.md) |
 | Silver | 1920 | [수 찾기](백준/Silver/1920. 수 찾기/수 찾기.js) | JavaScript | [README](백준/Silver/1920. 수 찾기/README.md) |
 | Silver | 2805 | [나무 자르기](백준/Silver/2805. 나무 자르기/나무 자르기.js) | JavaScript | [README](백준/Silver/2805. 나무 자르기/README.md) |
 | Silver | 7785 | [회사에 있는 사람](백준/Silver/7785. 회사에 있는 사람/회사에 있는 사람.js) | JavaScript | [README](백준/Silver/7785. 회사에 있는 사람/README.md) |
