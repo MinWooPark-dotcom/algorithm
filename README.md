@@ -4,15 +4,16 @@
 
 | 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |--------|----------|--------|--------|--------|--------|--------|
-| 2025-10-26 12:51:05 | 프로그래머스 | 1 | 12906 | [같은 숫자는 싫어](프로그래머스/1/12906. 같은 숫자는 싫어/같은 숫자는 싫어.js) | JavaScript | [README](프로그래머스/1/12906. 같은 숫자는 싫어/README.md) |
 | 2025-10-26 16:04:09 | 백준 | Bronze | 10818 | [최소， 최대](백준/Bronze/10818. 최소， 최대/최소， 최대.js) | JavaScript | [README](백준/Bronze/10818. 최소， 최대/README.md) |
 | 2025-10-27 09:04:52 | 백준 | Bronze | 1546 | [평균](백준/Bronze/1546. 평균/평균.js) | JavaScript | [README](백준/Bronze/1546. 평균/README.md) |
 | 2025-10-27 15:45:43 | 백준 | Silver | 1181 | [단어 정렬](백준/Silver/1181. 단어 정렬/단어 정렬.js) | JavaScript | [README](백준/Silver/1181. 단어 정렬/README.md) |
 | 2025-10-27 18:41:52 | 백준 | Silver | 10815 | [숫자 카드](백준/Silver/10815. 숫자 카드/숫자 카드.js) | JavaScript | [README](백준/Silver/10815. 숫자 카드/README.md) |
+| 2025-10-27 23:21:18 | 백준 | Bronze | 1157 | [단어 공부](백준/Bronze/1157. 단어 공부/단어 공부.js) | JavaScript | [README](백준/Bronze/1157. 단어 공부/README.md) |
 ## 📂 백준
 
 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |------|------|--------|--------|--------|
+| Bronze | 1157 | [단어 공부](백준/Bronze/1157. 단어 공부/단어 공부.js) | JavaScript | [README](백준/Bronze/1157. 단어 공부/README.md) |
 | Bronze | 1546 | [평균](백준/Bronze/1546. 평균/평균.js) | JavaScript | [README](백준/Bronze/1546. 평균/README.md) |
 | Bronze | 2557 | [Hello world](백준/Bronze/2557. Hello World/Hello World.py) | Python | [README](백준/Bronze/2557. Hello World/README.md) |
 | Bronze | 3052 | [나머지](백준/Bronze/3052. 나머지/나머지.js) | JavaScript | [README](백준/Bronze/3052. 나머지/README.md) |
