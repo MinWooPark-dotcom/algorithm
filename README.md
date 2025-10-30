@@ -4,11 +4,11 @@
 
 | 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |
 |--------|----------|--------|--------|--------|--------|--------|
-| 2025-10-26 16:04:09 | 백준 | Bronze | 10818 | [최소， 최대](백준/Bronze/10818. 최소， 최대/최소， 최대.js) | JavaScript | [README](백준/Bronze/10818. 최소， 최대/README.md) |
 | 2025-10-27 09:04:52 | 백준 | Bronze | 1546 | [평균](백준/Bronze/1546. 평균/평균.js) | JavaScript | [README](백준/Bronze/1546. 평균/README.md) |
 | 2025-10-27 15:45:43 | 백준 | Silver | 1181 | [단어 정렬](백준/Silver/1181. 단어 정렬/단어 정렬.js) | JavaScript | [README](백준/Silver/1181. 단어 정렬/README.md) |
 | 2025-10-27 18:41:52 | 백준 | Silver | 10815 | [숫자 카드](백준/Silver/10815. 숫자 카드/숫자 카드.js) | JavaScript | [README](백준/Silver/10815. 숫자 카드/README.md) |
 | 2025-10-27 23:21:18 | 백준 | Bronze | 1157 | [단어 공부](백준/Bronze/1157. 단어 공부/단어 공부.js) | JavaScript | [README](백준/Bronze/1157. 단어 공부/README.md) |
+| 2025-10-30 14:01:31 | 백준 | Gold | 1717 | [집합의 표현](백준/Gold/1717. 집합의 표현/집합의 표현.js) | JavaScript | [README](백준/Gold/1717. 집합의 표현/README.md) |
 ## 📂 백준
 
 | 레벨 | 번호 | 문제 | 언어 | 결과 |
@@ -18,6 +18,7 @@
 | Bronze | 2557 | [Hello world](백준/Bronze/2557. Hello World/Hello World.py) | Python | [README](백준/Bronze/2557. Hello World/README.md) |
 | Bronze | 3052 | [나머지](백준/Bronze/3052. 나머지/나머지.js) | JavaScript | [README](백준/Bronze/3052. 나머지/README.md) |
 | Bronze | 10818 | [최소， 최대](백준/Bronze/10818. 최소， 최대/최소， 최대.js) | JavaScript | [README](백준/Bronze/10818. 최소， 최대/README.md) |
+| Gold | 1717 | [집합의 표현](백준/Gold/1717. 집합의 표현/집합의 표현.js) | JavaScript | [README](백준/Gold/1717. 집합의 표현/README.md) |
 | Silver | 1003 | [피보나치 함수](백준/Silver/1003. 피보나치 함수/피보나치 함수.js) | JavaScript | [README](백준/Silver/1003. 피보나치 함수/README.md) |
 | Silver | 1181 | [단어 정렬](백준/Silver/1181. 단어 정렬/단어 정렬.js) | JavaScript | [README](백준/Silver/1181. 단어 정렬/README.md) |
 | Silver | 1920 | [수 찾기](백준/Silver/1920. 수 찾기/수 찾기.js) | JavaScript | [README](백준/Silver/1920. 수 찾기/README.md) |
