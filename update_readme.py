@@ -112,7 +112,8 @@ def generate_readme():
     lines.insert(2, '| 날짜 | 플랫폼 | 레벨 | 번호 | 문제 | 언어 | 결과 |')
     lines.insert(3, '|--------|----------|--------|--------|--------|--------|--------|')
 
-    for item in sorted(recent_list, reverse=True)[:5]:
+    # for item in sorted(recent_list, reverse=True)[:5]:
+    for item in sorted(recent_list, reverse=True)[:5][::-1]:
         dt, folder, level, number, title, language, problem_path = item
         date_str = dt.strftime('%Y-%m-%d %H:%M:%S')
 
